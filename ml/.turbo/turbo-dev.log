@@ -1,0 +1,4 @@
+[?9001h[?1004h[?25l[2J[m[H]0;C:\WINDOWS\system32\cmd.exe [?25h[?25l
+> @phishguard/ml@1.0.0 dev D:\Users\RANCC Design\Desktop\smartshield\packages\ml
+> echo 'ML package ready for development'[5;1H[?25h'ML package ready for development'
+[?9001l[?1004l

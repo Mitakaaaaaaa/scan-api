@@ -1,0 +1,9 @@
+[build]
+# System libs for Chromium are declared in nixpacks.toml (aptPkgs) so they
+# end up in the runtime image.  We no longer need --with-deps here; that
+# flag only installs .so files into the build stage which never reach the
+# final container.
+buildCommand = "pip install -r ml/requirements.txt && export PLAYWRIGHT_BROWSERS_PATH=/app/.playwright && playwright install chromium"
+
+[deploy]
+startCommand = "cd ml && python start.py"

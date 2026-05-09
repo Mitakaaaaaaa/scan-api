@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python311", "gcc", "chromium", "chromium-driver", "nss", "libGLU"]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt", "playwright install chromium --with-deps"]
+
+[start]
+cmd = "python start.py"
